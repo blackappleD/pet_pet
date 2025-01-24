@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'pet_pet'
+
+include 'pet_pet_core'
+include 'pet_pet_api'
+include 'pet_pet_mg'

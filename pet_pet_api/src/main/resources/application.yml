@@ -1,0 +1,40 @@
+server:
+  port: 18888
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: api_market_api
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3306/pet_pet"
+    username: root
+    password: P@ssW0rd1874
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  default-produces-media-type: application/json
+  api-docs:
+    enabled: true
+  swagger-ui:
+    tags-sorter: alpha
+    operations-sorter: alpha
+
+mail:
+  smtp:
+    host: smtp.163.com
+    port: 465
+    mail-from: aChen1874@163.com
+    password: QZb5W3BjxEnfuvtF
+auth:
+  jwt:
+    enable: true
+    expire: 720000
+cache:
+  mode: caffeine

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet_pet_api/pet_pet.pet_pet_api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pet_pet_api/pet_pet.pet_pet_api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet_pet_core/pet_pet.pet_pet_core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pet_pet_core/pet_pet.pet_pet_core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pet_pet_mg/pet_pet.pet_pet_mg.main.iml" filepath="$PROJECT_DIR$/.idea/modules/pet_pet_mg/pet_pet.pet_pet_mg.main.iml" />
+    </modules>
+  </component>
+</project>

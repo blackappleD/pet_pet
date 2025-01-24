@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'com.google.cloud.tools.jib' version '3.4.3'
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+
+group = 'com.api.market'
+version = '1.0'
+allprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'jacoco'
+
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    dependencies {
+        // https://mvnrepository.com/artifact/cn.hutool/hutool-all
+        implementation 'cn.hutool:hutool-all:5.8.34'
+        // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+        implementation "org.springframework.boot:spring-boot-starter-web:3.3.4"
+
+        // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
+        implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+
+        // https://mvnrepository.com/artifact/org.apache.groovy/groovy
+        implementation 'org.apache.groovy:groovy:5.0.0-alpha-10'
+
+        // https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path
+        implementation 'com.jayway.jsonpath:json-path:2.9.0'
+        // https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+        implementation 'com.sun.mail:javax.mail:1.6.2'
+        // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+        implementation 'mysql:mysql-connector-java:8.0.28'
+        // https://mvnrepository.com/artifact/org.projectlombok/lombok
+        compileOnly 'org.projectlombok:lombok:1.18.36'
+        annotationProcessor 'org.projectlombok:lombok:1.18.36'
+        // https://mvnrepository.com/artifact/org.mapstruct/mapstruct
+        implementation 'org.mapstruct:mapstruct:1.6.3'
+        annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+
+        //jpa相关
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'org.springframework.data:spring-data-envers'
+        implementation 'javax.xml.bind:jaxb-api:2.3.0'
+        implementation 'com.sun.xml.bind:jaxb-impl:2.3.0'
+        implementation 'com.sun.xml.bind:jaxb-core:2.3.0'
+
+        // https://mvnrepository.com/artifact/com.auth0/auth0
+        implementation 'com.auth0:auth0:2.16.0'
+
+        // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
+        implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.4.1'
+        // https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine
+        implementation 'com.github.ben-manes.caffeine:caffeine:3.1.8'
+
+        // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
+        // https://mvnrepository.com/artifact/com.alibaba/easyexcel
+        implementation 'com.alibaba:easyexcel:4.0.3'
+
+
+    }
+
+
+}
+test {
+    useJUnitPlatform()
+}
