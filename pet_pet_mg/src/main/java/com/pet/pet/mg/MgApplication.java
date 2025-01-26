@@ -17,7 +17,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EntityScan(basePackageClasses = UserPO.class)
 @EnableJpaRepositories(basePackageClasses = UserRepo.class)
 @EnableJpaAuditing
-@OpenAPIDefinition(info = @Info(title = "API", version = "1.0"))
 public class MgApplication {
 
 	public static void main(String[] args) {

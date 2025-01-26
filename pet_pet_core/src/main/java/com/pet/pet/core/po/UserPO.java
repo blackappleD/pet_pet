@@ -20,7 +20,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity(name = UserPO.TABLE_NAME)
 public class UserPO extends BasePO.CommonPO<String> {
 
-	public static final String TABLE_NAME = "am_user";
+	public static final String TABLE_NAME = "pp_user";
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "accountIdGenerator")
