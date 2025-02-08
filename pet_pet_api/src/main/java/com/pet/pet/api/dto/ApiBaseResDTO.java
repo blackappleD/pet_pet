@@ -8,7 +8,6 @@ public class ApiBaseResDTO<T> {
 
 	private String message;
 
-	private BillStatus bill;
 
 	private T data;
 
@@ -16,7 +15,6 @@ public class ApiBaseResDTO<T> {
 		ApiBaseResDTO<T> response = new ApiBaseResDTO<>();
 		response.code = 200;
 		response.data = data;
-		response.bill = BillStatus.YES;
 		return response;
 	}
 
@@ -28,7 +26,6 @@ public class ApiBaseResDTO<T> {
 		ApiBaseResDTO<T> response = new ApiBaseResDTO<>();
 		response.code = code;
 		response.message = msg;
-		response.bill = BillStatus.NO;
-		return response;
+		return response; 
 	}
 }
